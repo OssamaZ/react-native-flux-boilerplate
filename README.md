@@ -1,4 +1,4 @@
-# React Native Boilerplate
+# React Native Flux Boilerplate
 Starter boilerplate for React native using flux, rn webpack and hot reload
 
     git clone https://github.com/OssamaZ/react-native-flux-boilerplate
