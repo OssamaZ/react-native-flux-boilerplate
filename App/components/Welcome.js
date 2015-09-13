@@ -23,45 +23,45 @@ function _getStateFromStore() {
 
 class WelcomeComponent extends React.Component {
     
-    constructor(props) {
-        super(props);
+  constructor(props) {
+    super(props);
 
-        this.state = _getStateFromStore();
-        // BIND 'this' (ES6 React)
-        this._onChange = this._onChange.bind(this);
-    }
+    this.state = _getStateFromStore();
+    // BIND 'this' (ES6 React)
+    this._onChange = this._onChange.bind(this);
+  }
 
-    componentDidMount() {
-        AppStore.addChangeListener(this._onChange);
-    }
+  componentDidMount() {
+    AppStore.addChangeListener(this._onChange);
+  }
 
-    componentWillUnmount() {
-        AppStore.removeChangeListener(this._onChange);
-    }
+  componentWillUnmount() {
+    AppStore.removeChangeListener(this._onChange);
+  }
 
-    render() {
-        return (
-            <View>
-                <TouchableHighlight 
-                    style={{alignSelf: 'center'}}
-                    onPress={this._changeMessageStore}
-                    underlayColor="transparent">
-                    <Text style={styles.button}>Change Message in Store</Text>
-                </TouchableHighlight>
-                <Text style={styles.welcome}>
-                    {this.state.message}
-                </Text>
-            </View>
-        );
-    }
+  render() {
+    return (
+      <View>
+        <TouchableHighlight 
+          style={{alignSelf: 'center'}}
+          onPress={this._changeMessageStore}
+          underlayColor="transparent">
+          <Text style={styles.button}>Change Message in Store</Text>
+        </TouchableHighlight>
+        <Text style={styles.welcome}>
+          {this.state.message} :)
+        </Text>
+      </View>
+    );
+  }
 
-    _onChange() {
-        this.setState(_getStateFromStore());
-    }
+  _onChange() {
+      this.setState(_getStateFromStore());
+  }
 
-    _changeMessageStore() {
-        AppActions.setWelcomeMessage('Store message Changed !');
-    }
+  _changeMessageStore() {
+      AppActions.setWelcomeMessage('Store message Changed !');
+  }
 
 }
 

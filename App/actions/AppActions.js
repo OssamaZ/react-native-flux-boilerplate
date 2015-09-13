@@ -9,15 +9,15 @@ import AppConstants from '../constants/AppConstants';
 
 let AppActions = {
 
-    setWelcomeMessage(message) {
+	setWelcomeMessage(message) {
 
-    	// do some async stuff here and dispatch to stores
+		// do some async stuff here and dispatch to stores
 
-        AppDispatcher.dispatch({
-            actionType: AppConstants.SET_MESSAGE,
-            message: message
-        });
-    }
+		AppDispatcher.dispatch({
+			actionType: AppConstants.SET_MESSAGE,
+			message: message
+		});
+	}
 
 };
 
