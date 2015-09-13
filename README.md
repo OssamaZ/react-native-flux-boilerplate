@@ -12,6 +12,8 @@ Starter boilerplate for React native using flux, rn webpack and hot reload
 
 The starting point of your project is in the folder App, dont forget to update the webpack config file if you change this.
 
+The babel loader is also preconfigured, so you can use full ES6 in your code ;)
+
 ###### Preview:
 
 ![Preview](http://i.imgur.com/76qhgae.gif)
