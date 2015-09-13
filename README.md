@@ -1,5 +1,5 @@
-# react-native-flux-boilerplate
-Starter boilerplate for React native using flux and hot reload
+# React Native Boilerplate
+Starter boilerplate for React native using flux, rn webpack and hot reload
 
 * clone
 * npm install
