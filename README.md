@@ -8,9 +8,9 @@ Starter boilerplate for React native using flux, rn webpack and hot reload
     npm run hot
     run project
 
-###### PS:  sure to enable live reload and chrome debugging
+###### PS:  make sure to enable live reload and chrome debugging
 
-The starting point of your project is in the folder App, make sure to update the webpack config file if you change this.
+The starting point of your project is in the folder App, dont forget to update the webpack config file if you change this.
 
 #### Projects:
 * [flux](https://github.com/facebook/flux)
