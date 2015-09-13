@@ -5,5 +5,4 @@ Starter boilerplate for React native using flux and hot reload
 * npm install
 * npm run hot
 * run project with (Enable live reload, chrome debug)
-
 * enjoy

@@ -47,7 +47,7 @@ AppDispatcher.register(function(action) {
         break;
 
         case AppConstants.SET_MESSAGE:
-            _setStateMessage(action.user);
+            _setStateMessage(action.message);
             AppStore.emitChange();
         break;
 

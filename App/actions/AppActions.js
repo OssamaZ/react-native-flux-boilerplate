@@ -4,13 +4,15 @@
 
 'use strict';
 
-let AppDispatcher = require('../dispatcher/AppDispatcher');
-let AppConstants = require('../constants/AppConstants');
+import AppDispatcher from '../dispatcher/AppDispatcher';
+import AppConstants from '../constants/AppConstants';
 
 let AppActions = {
 
     setWelcomeMessage(message) {
-        // remove localstorage, then dispatch
+
+    	// do some async stuff here and dispatch to stores
+
         AppDispatcher.dispatch({
             actionType: AppConstants.SET_MESSAGE,
             message: message
@@ -19,4 +21,4 @@ let AppActions = {
 
 };
 
-module.exports = AppActions;
+export default AppActions;

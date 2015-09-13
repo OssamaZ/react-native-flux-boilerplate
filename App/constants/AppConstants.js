@@ -2,11 +2,11 @@
  * AppConstants
  */
 
-var keyMirror = require('keymirror');
+import keyMirror from 'keymirror';
 
-var AppConstants = keyMirror({
+let AppConstants = keyMirror({
 	GET_MESSAGE: null,
 	SET_MESSAGE: null,
 });
 
-module.exports = AppConstants;
+export default AppConstants;
