@@ -12,7 +12,7 @@ let _ = require('lodash');
 let CHANGE_EVENT = 'change';
 
 let _state = {
-    message: 'Welcome to React Native!'
+    message: 'Welcome to React Native'
 };
 
 
