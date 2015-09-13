@@ -1,13 +1,13 @@
 /*
- * AppActions
+ * AppStore
  */
 
 'use strict';
 
-let AppDispatcher = require('../dispatcher/AppDispatcher');
-let EventEmitter  = require('events').EventEmitter;
-let AppConstants  = require('../constants/AppConstants');
-let _ = require('lodash');
+import AppDispatcher from '../dispatcher/AppDispatcher';
+import { EventEmitter }  from 'events';
+import AppConstants  from '../constants/AppConstants';
+import _ from 'lodash';
 
 let CHANGE_EVENT = 'change';
 
@@ -65,4 +65,4 @@ let _setStateMessage = (message) => {
     _state.message = message;
 };
 
-module.exports = AppStore;
+export default AppStore;
