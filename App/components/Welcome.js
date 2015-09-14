@@ -49,7 +49,7 @@ class WelcomeComponent extends React.Component {
           <Text style={styles.button}>Change Message in Store</Text>
         </TouchableHighlight>
         <Text style={styles.welcome}>
-          {this.state.message} :)
+          {this.state.message}
         </Text>
       </View>
     );

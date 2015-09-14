@@ -18,6 +18,21 @@ The babel loader is also preconfigured, so you can use full ES6 in your code ;)
 
 ![Preview](http://i.imgur.com/76qhgae.gif)
 
+### Issues:
+
+When you first run 'npm run hot' you'll maybe encounter this error:
+
+![Error](http://i.imgur.com/5MeksHK.png)
+
+To fix this, 
+    ctrl+c in your terminal 
+    run: npm start (to run without the hot reload)
+    after React packager ready. reload the simulator (it should work fine but without hot reload support)
+
+Make sure you select *Debug in chrome* option (cmd+D)
+
+![Fix](http://i.imgur.com/Hyp8krZ.png)
+
 
 #### Projects:
 * [flux](https://github.com/facebook/flux)
