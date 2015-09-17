@@ -9,7 +9,7 @@ var config = {
 	devtool: 'source-map',
 
 	entry: {
-		'index.ios': ['./App/index.js'],
+		'index.ios': ['./App/index.js']
 	},
 
 	output: {
